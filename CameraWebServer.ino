@@ -16,8 +16,8 @@
 
 #include "camera_pins.h"
 
-const char* ssid = "JioFi3_58D486";
-const char* password = "mu2dswkx63";
+const char* ssid = "<wifi-ssid>";
+const char* password = "<wifi-passsword>";
 
 void startCameraServer();
 
