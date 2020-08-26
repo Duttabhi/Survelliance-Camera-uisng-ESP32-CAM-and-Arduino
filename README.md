@@ -31,4 +31,5 @@ Some **important settings** are as follows:
 • Add following line under void setup() method:
 1. WRITE_PERI_REG(RTC_CNTL_BROWN_OUT_REG, 0);
 
+<img src="https://github.com/Duttabhi/Survelliance-Camera-uisng-ESP32-CAM-and-Arduino/blob/master/esp32%20cam.jpg" width=500>
 
