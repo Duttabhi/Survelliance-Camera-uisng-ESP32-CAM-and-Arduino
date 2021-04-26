@@ -1,7 +1,11 @@
 # Surveillance-Camera-using-ESP32-CAM-and-Arduino
+
 **Using the Wifi and pre-configured features to capture image, record video, do image processing and much more**
+
 Check the CameraWebServer.ino code file.
+
 ESP 32 CAM module (HW-297, AI-Thinker) with Arduino UNO
+
 Check the Ranual PDF for step by step details.
 
 Objective: Program an ESP32-CAM using Arduino to take pictures in specified time interval and store in the memory card. It deletes the data if the memory limit reaches.
@@ -20,6 +24,7 @@ Some **important settings** are as follows:
 3. Open the IDE.
 
 **Get the ESP32 Add-on**
+
 1. Got to **File menu**
 2. Select **Preferences**
 3. Paste the link in Additional Boards Manger test box: https://dl.espressif.com/dl/package_esp32_index.json
@@ -30,7 +35,9 @@ Some **important settings** are as follows:
 8. Go to tools again and select ‘Board: ESP32 Wrover Module’.
 
 **Modify CameraWebServer Example on Arduino IDE**
+
 Remark: You can copy the code from CameraWebServer.ino. There are supporting files for it as: (1) app_httpd.cpp (2) camera_index.h (3) camera_pins.h
+
 1. Go to Examples > ESP32 > Camera > CameraWebServer.
 2. Add 2 more headers:
 3. #include "soc/soc.h"
@@ -42,10 +49,12 @@ Remark: You can copy the code from CameraWebServer.ino. There are supporting fil
 
 **Connections should be done as follows:**
 
-<img src="https://github.com/Duttabhi/Survelliance-Camera-uisng-ESP32-CAM-and-Arduino/blob/master/esp32%20cam.jpg" width=400>
+<img src="https://github.com/Duttabhi/Survelliance-Camera-uisng-ESP32-CAM-and-Arduino/blob/master/webServer.PNG" width=400>
 
 **Uploading the project**
+
 Following steps should be noticed
+
 1. First connecting... will be seen
 2. Now Downloading(1%)... Downlaoding(100%)
 3. Then a Hard reset message will be there
@@ -55,12 +64,19 @@ Following steps should be noticed
 7. You should see the URL for opening web server
 
 **Making camera to cpature image after every 30 seconds automatically**
+
 Remark: You need to press the reset button at the start to trigger the camera.
+
 **Install Arduino IDE**: as above
+
 **Get the ESP32 Add-on**: as above
+
 **Code**
+
 Remark: You can copy code from MemoryCapture.ino file
+
 Some remarks of the code are
+
 1. Pins for CAMERA_MODEL_AI_THINKER are defined at the beginnning but in the tools you should select Wrover Module (it's just the setting you know)
 2. All the intialization is done in **void setup(){}**
 3. The capturing and storing procedure is written in **void loop(){}** so that it can run again and again
@@ -70,6 +86,6 @@ Some remarks of the code are
 
 **Connections should be done as follows:**
 
-<img src="https://github.com/Duttabhi/Survelliance-Camera-uisng-ESP32-CAM-and-Arduino/blob/master/esp32%20cam.jpg" width=400>
+<img src="https://github.com/Duttabhi/Survelliance-Camera-uisng-ESP32-CAM-and-Arduino/blob/master/timeLapse.PNG" width=400>
 
 **Uploading the project**: as above
