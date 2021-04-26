@@ -17,7 +17,7 @@ Please [check](https://youtu.be/cwKTPlZjHkY) the YouTube video also. Do share an
 
 Some **important settings** are as follows:
 
-**Install Arduino IDE**
+**A.1 Install Arduino IDE**
 
 1. Visit https://www.arduino.cc/en/main/software
 
@@ -25,7 +25,7 @@ Some **important settings** are as follows:
 
 3. Open the IDE.
 
-**Get the ESP32 Add-on**
+**A.2 Get the ESP32 Add-on**
 
 1. Got to **File menu**
 2. Select **Preferences**
@@ -36,7 +36,7 @@ Some **important settings** are as follows:
 7. Install the version ‘1.0.4’ (it has some Face Recognition capabilities and is more trusted over 1.0.6, as far as my experience).
 8. Go to tools again and select ‘Board: ESP32 Wrover Module’.
 
-**Modify CameraWebServer Example on Arduino IDE**
+**A.3 Modify CameraWebServer Example on Arduino IDE**
 
 Remark: You can copy the code from CameraWebServer.ino. There are supporting files for it as: (1) app_httpd.cpp (2) camera_index.h (3) camera_pins.h
 
@@ -49,11 +49,11 @@ Remark: You can copy the code from CameraWebServer.ino. There are supporting fil
 7. const char* password = “Your Wi-Fi password";
 8. Add following line under void setup() method to supress the Brown out error due to pwer fluctuations: **WRITE_PERI_REG(RTC_CNTL_BROWN_OUT_REG, 0);**
 
-**Connections should be done as follows:**
+**A.4 Connections should be done as follows:**
 
 <img src="https://github.com/Duttabhi/Survelliance-Camera-uisng-ESP32-CAM-and-Arduino/blob/master/webServer.PNG" width=700 height=400>
 
-**Uploading the project**
+**A.5 Uploading the project**
 
 Following steps should be noticed
 
@@ -69,11 +69,11 @@ Following steps should be noticed
 
 Remark: You need to press the reset button at the start to trigger the camera.
 
-**Install Arduino IDE**: as above
+**B.1 Install Arduino IDE**: as above
 
-**Get the ESP32 Add-on**: as above
+**B.2 Get the ESP32 Add-on**: as above
 
-**Code**
+**B.3 Code**
 
 Remark: You can copy code from MemoryCapture.ino file
 
@@ -86,8 +86,8 @@ Some remarks of the code are
 5. **static int pictureNumber = 0;** is added to intialize the numbering from 0 and increase there after
 6. In the end **esp_deep_sleep_start();** and codes nearby it are commented so that it may not go to sleep forever
 
-**Connections should be done as follows:**
+**B.4 Connections should be done as follows:**
 
-<img src="https://github.com/Duttabhi/Survelliance-Camera-uisng-ESP32-CAM-and-Arduino/blob/master/timeLapse.PNG" width=700 height=400>
+<img src="https://github.com/Duttabhi/Survelliance-Camera-uisng-ESP32-CAM-and-Arduino/blob/master/timeLapse.PNG" width=900 height=350>
 
-**Uploading the project**: as above
+**B.5 Uploading the project**: as above
