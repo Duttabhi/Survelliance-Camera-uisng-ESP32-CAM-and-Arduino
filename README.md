@@ -1,6 +1,8 @@
 # Surveillance-Camera-using-ESP32-CAM-and-Arduino
 
-**Using the Wifi and pre-configured features to capture image, record video, do image processing and much more**
+Remark: Check both (A) and (B) projects 
+
+**(A) Using the Wifi and pre-configured features to capture image, record video, do image processing and much more**
 
 Check the CameraWebServer.ino code file.
 
@@ -49,7 +51,7 @@ Remark: You can copy the code from CameraWebServer.ino. There are supporting fil
 
 **Connections should be done as follows:**
 
-<img src="https://github.com/Duttabhi/Survelliance-Camera-uisng-ESP32-CAM-and-Arduino/blob/master/webServer.PNG" width=400>
+<img src="https://github.com/Duttabhi/Survelliance-Camera-uisng-ESP32-CAM-and-Arduino/blob/master/webServer.PNG" width=700 height=400>
 
 **Uploading the project**
 
@@ -63,7 +65,7 @@ Following steps should be noticed
 6. Press the reset button
 7. You should see the URL for opening web server
 
-**Making camera to cpature image after every 30 seconds automatically**
+**(B) Making camera to cpature image after every 30 seconds automatically**
 
 Remark: You need to press the reset button at the start to trigger the camera.
 
@@ -86,6 +88,6 @@ Some remarks of the code are
 
 **Connections should be done as follows:**
 
-<img src="https://github.com/Duttabhi/Survelliance-Camera-uisng-ESP32-CAM-and-Arduino/blob/master/timeLapse.PNG" width=400>
+<img src="https://github.com/Duttabhi/Survelliance-Camera-uisng-ESP32-CAM-and-Arduino/blob/master/timeLapse.PNG" width=700 height=400>
 
 **Uploading the project**: as above
