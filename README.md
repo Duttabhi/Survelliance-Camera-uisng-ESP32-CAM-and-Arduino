@@ -1,6 +1,6 @@
 # Surveillance-Camera-using-ESP32-CAM-and-Arduino
 
-Remark: Check both (A) and (B) projects 
+Remark: Check both (A) and (B) projects (any of the configuration shown in the two images below can be used for uploading the project)
 
 **(A) Using the Wifi and pre-configured features to capture image, record video, do image processing and much more**
 
